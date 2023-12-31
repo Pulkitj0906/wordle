@@ -1,24 +1,14 @@
 'use client'
 
-import useEditModal from "@/app/components/hooks/useEditModal";
-import axios from "axios";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import Modal from "./Modal";
-import useKeyboard from "./hooks/useKeyboard";
-import Toggle from "./Toggle";
-import { KeyObject } from "crypto";
 import useGameEndModal from "./hooks/useGameEndModal";
 import { AppContext } from "./Body";
 
 const GameEndModal = () => {
     const GameEnd = useGameEndModal();
     const { correctWord, gameOver,currAttempt } = useContext(AppContext)
-    const EditModal = useEditModal();
-    const keyboard = useKeyboard()
     const [isLoading, setIsLoading] = useState(false);
-    const toggleKeyboard = useCallback(() => {
-        keyboard.isOpen ? keyboard.OnClose() : keyboard.OnOpen();
-    }, [keyboard]);
     const stats=Math.floor(Math.random()*10+90)
 
     const bodyContent = (

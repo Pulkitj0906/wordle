@@ -7,7 +7,7 @@ interface LetterProps {
 }
 
 const Letter: React.FC<LetterProps> = ({ letterPos, attemptVal }) => {
-  const { board, correctWord, currAttempt,disabledLetters,setDisabledLetters } = useContext(AppContext);
+  const { board, correctWord, currAttempt,setDisabledLetters } = useContext(AppContext);
   const letter = board[attemptVal][letterPos];
 
   const correctcss = 'bg-thisgreen'; 

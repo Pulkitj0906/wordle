@@ -5,7 +5,6 @@ import { boardDefault } from "./Words"
 import Letter from "./Letter";
 
 const Table = () => {
-  const [board, setBoard] = useState(boardDefault);
   return (
     <div className="flex flex-col gap-1">
       {" "}

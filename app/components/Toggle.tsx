@@ -6,7 +6,6 @@ interface ToggleProps{
 }
 
 const Toggle:React.FC<ToggleProps> = ({isOpened,onClick}) => {
-    // const [isOpened,setisOpened]= useState(false)
   return (
       <div
           onClick={onClick}

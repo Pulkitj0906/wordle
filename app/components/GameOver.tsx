@@ -1,7 +1,5 @@
-import { useContext } from "react";
-import { AppContext } from "./Body";
 import { MdOutlineRefresh } from "react-icons/md";
-import {  useRouter } from "next/router";
+
 
 const GameOver = () => {
   const handleRefresh = () => {

@@ -1,14 +1,8 @@
 'use client'
 
-import useEditModal from "@/app/components/hooks/useEditModal";
-import axios from "axios";
-import { useCallback, useEffect, useState } from "react";
+
 import Modal from "./Modal";
-import useKeyboard from "./hooks/useKeyboard";
-import Toggle from "./Toggle";
-import { KeyObject } from "crypto";
 import useQuestionModal from "./hooks/useQuestionModal";
-import Key from "./Key";
 import FakeKey from "./FakeKey";
 
 const QuestionModal = () => {

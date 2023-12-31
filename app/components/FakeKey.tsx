@@ -1,7 +1,3 @@
-import { useContext } from "react";
-import { AppContext } from "./Body";
-
-
 interface KeyProps{
     keyVal: string
     disabled?: boolean

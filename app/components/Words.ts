@@ -1,5 +1,3 @@
-// Words.ts
-
 import { wordList } from "./wordbank";
 
 export const boardDefault = [

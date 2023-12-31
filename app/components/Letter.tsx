@@ -23,10 +23,10 @@ const Letter: React.FC<LetterProps> = ({ letterPos, attemptVal }) => {
 
 
   useEffect(() => {
-    if (letter !== '' && !correct && !almost) {
+    if (letter !== '' && !correct && !almost && currAttempt.attempt > attemptVal) {
       setDisabledLetters((prev)=>[...prev,letter])
     }
-  },[currAttempt.attempt])
+  },[currAttempt.attempt,almost,correct,letter,setDisabledLetters,attemptVal])
 
   return (
     <div

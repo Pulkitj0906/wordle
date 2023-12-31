@@ -26,7 +26,7 @@ const GameEndModal = () => {
             <div className="text-slate-300 flex justify-between items-center">
                 <div className="flex flex-col gap-0">
                     <h1 className="m-4 font-semibold">Correct Word: <span className="font-extrabold">{correctWord.toUpperCase()}</span></h1>
-                    <h1 className="m-4">Don't worry only <span className="font-bold">{100-stats}% </span> people could solve this puzzle.</h1>
+                    <h1 className="m-4">Do not worry only <span className="font-bold">{100-stats}% </span> people could solve this puzzle.</h1>
                     <h1 className="m-4">Give it another try!</h1>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const GameEndModal = () => {
             <div className="text-slate-300 flex justify-between items-center">
                 <div className="flex flex-col gap-0">
                     <h1 className="m-4 font-semibold">You guessed the correct word: <span className="font-extrabold">{correctWord.toUpperCase()}</span> in {currAttempt.attempt} { currAttempt.attempt>1?'attempts':'attempt'}.</h1>
-                    <h1 className="m-4">You beat <span className="font-bold">{stats}% </span> people who couldn't solve this puzzle.</h1>
+                    <h1 className="m-4">You beat <span className="font-bold">{stats}% </span> people who could not solve this puzzle.</h1>
                     <h1 className="m-4">Give the next puzzle a try!</h1>
                 </div>
             </div>

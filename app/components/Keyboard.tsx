@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect } from "react";
+import { useCallback, useContext, useEffect, useMemo, useState } from "react";
 import Key from "./Key";
 import { AppContext } from "./Body";
 import useKeyboard from "./hooks/useKeyboard";
@@ -6,9 +6,9 @@ import useKeyboard from "./hooks/useKeyboard";
 const Keyboard = () => {
   const { onEnter, OnDelete, OnSelectLetter,disabledLetters } = useContext(AppContext);
   const KeyboardUse = useKeyboard();
-  const keys1 = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
-  const keys2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
-  const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
+  const keys1 = useMemo(()=>["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"],[]) ;
+  const keys2 = useMemo(()=>["A", "S", "D", "F", "G", "H", "J", "K", "L"],[]);
+  const keys3 = useMemo(()=>["Z", "X", "C", "V", "B", "N", "M"],[]);
 
   const handleKeyboard = useCallback((event:KeyboardEvent) => {
     const key = event.key.toUpperCase();

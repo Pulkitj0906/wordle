@@ -46,7 +46,7 @@ const QuestionModal = () => {
                     <FakeKey keyVal="e"/>
                     <FakeKey keyVal="r"/>
                 </div>
-                <h2 className="text-xs mt-1 text-slate-200"><span className="font-bold">U</span> is not in the word in any spot.</h2>
+                <h2 className="text-xs mt-1 text-slate-200"><span className="font-bold">T</span> is not in the word in any spot.</h2>
             </div>
             <hr className="opacity-40"/>
         </div>

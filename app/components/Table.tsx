@@ -6,7 +6,7 @@ import Letter from "./Letter";
 
 const Table = () => {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1 z-10">
       {" "}
       
     <div className="flex gap-1">
@@ -16,7 +16,7 @@ const Table = () => {
       <Letter letterPos={3} attemptVal={0} />
       <Letter letterPos={4} attemptVal={0} />
     </div>
-    <div className="flex gap-1">
+    <div className="flex gap-1 z-10">
       <Letter letterPos={0} attemptVal={1} />
       <Letter letterPos={1} attemptVal={1} />
       <Letter letterPos={2} attemptVal={1} />

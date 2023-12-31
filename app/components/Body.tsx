@@ -6,6 +6,7 @@ import Table from './Table';
 import { boardDefault, generateWordSet } from './Words';
 import GameOver from './GameOver';
 import GameEndModal from './GameEndModal';
+import ConfettiModal from './ConfettiModal';
 
 type BoardType = string[][];
 
@@ -126,6 +127,7 @@ export default function Home() {
         >
           <Table />
           {gameOver.gameOver?<><GameEndModal/> <GameOver/></>:<Keyboard />}
+          {gameOver.guessedWord?<ConfettiModal/>:''}
         </AppContext.Provider>
       </div>
     );

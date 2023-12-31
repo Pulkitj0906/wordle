@@ -43,6 +43,7 @@ const Letter: React.FC<LetterProps> = ({ letterPos, attemptVal }) => {
         uppercase
         font-bold
         text-2xl
+        z-10
         ${letterState}
       `}
     >

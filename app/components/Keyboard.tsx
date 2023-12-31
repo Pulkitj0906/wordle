@@ -37,7 +37,7 @@ const Keyboard = () => {
   }, [handleKeyboard, KeyboardUse.isOpen]);
 
   return (
-    <div className="flex flex-col gap-1 items-center justify-center">
+    <div className="flex flex-col gap-1 items-center justify-center z-10">
       <div className="flex gap-1 flex-row">
         {keys1.map((key) => (
           <Key key={key} keyVal={key} disabled={disabledLetters.includes(key)} />

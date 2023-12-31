@@ -59,7 +59,7 @@ const GameEndModal = () => {
         <Modal
             disabled={isLoading}
             isOpen={GameEnd.isOpen}
-            title={gameOver.guessedWord===true? "Congratulations!":'Nice Try!'}
+            title={gameOver.guessedWord===true? "Congratulations!👏":'Nice Try!👍'}
             actionLabel="Save"
             onClose={GameEnd.OnClose}
             onSubmit={()=>{}}

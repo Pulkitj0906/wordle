@@ -6,7 +6,7 @@ const GameOver = () => {
     window.location.reload(); 
   };
   return (
-    <div className="text-white flex justify-center items-center h-9 w-9 z-10">
+    <div className="dark:text-white flex justify-center items-center h-9 w-9 z-10">
       <a onClick={handleRefresh} className="cursor-pointer">
         <MdOutlineRefresh
           className="hover:scale-125 translate-all duration-500 ease-out hover:rotate-180"

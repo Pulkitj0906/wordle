@@ -16,13 +16,13 @@ const FakeKey: React.FC<KeyProps> = ({ keyVal ,disabled,keytype}) => {
           justify-center
           h-12
           w-12
-          text-white
+          dark:text-white
           uppercase
           font-bold
           text-2xl
-          ${keytype==='correct'&& 'bg-thisgreen'}
-          ${keytype==='almost'&& 'bg-thisyellow'}
-          ${keytype==='fill'&& 'bg-neutral-700'}
+          ${keytype==='correct'&& 'bg-thisgreen text-white'}
+          ${keytype==='almost'&& 'bg-thisyellow text-white'}
+          ${keytype==='fill'&& 'bg-neutral-700 text-white'}
           `}>
       {keyVal}
     </div>

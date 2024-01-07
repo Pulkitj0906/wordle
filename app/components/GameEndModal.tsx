@@ -13,14 +13,14 @@ const GameEndModal = () => {
 
     const bodyContent = (
         <div className="flex flex-col gap-4">
-            <div className="text-slate-300 flex justify-between items-center">
+            <div className="dark:text-slate-300 flex justify-between items-center">
                 <div className="flex flex-col gap-0">
                     <h1 className="m-4 font-semibold">Correct Word: <span className="font-extrabold">{correctWord.toUpperCase()}</span></h1>
                     <h1 className="m-4">Do not worry only <span className="font-bold">{100-stats}% </span> people could solve this puzzle.</h1>
                     <h1 className="m-4">Give it another try!</h1>
                 </div>
             </div>
-            <hr className="opacity-40" />
+            <hr className="dark:opacity-40" />
             <div className="text-slate-300 flex justify-between">
                 <h1 className="font-semibold">Questions?</h1>
                 <a href="https://help.nytimes.com/hc/en-us/articles/360029050872-Word-Games-and-Logic-Puzzles#h_01FVGCB2Z00ZQMDMCYWBPWJNXB" target="_blank" rel="noopener noreferrer" className="underline">
@@ -32,25 +32,25 @@ const GameEndModal = () => {
     )
     const bodyContent2 = (
         <div className="flex flex-col gap-4">
-            <div className="text-slate-300 flex justify-between items-center">
+            <div className="dark:text-slate-300 flex justify-between items-center">
                 <div className="flex flex-col gap-0">
-                    <h1 className="m-4 font-semibold">You guessed the correct word: <span className="font-extrabold">{correctWord.toUpperCase()}</span> in {currAttempt.attempt} { currAttempt.attempt>1?'attempts':'attempt'}.</h1>
+                    <h1 className="m-4 ">You guessed the correct word: <span className="font-extrabold">{correctWord.toUpperCase()}</span> in {currAttempt.attempt} { currAttempt.attempt>1?'attempts':'attempt'}.</h1>
                     <h1 className="m-4">You beat <span className="font-bold">{stats}% </span> people who could not solve this puzzle.</h1>
                     <h1 className="m-4">Give the next puzzle a try!</h1>
                 </div>
             </div>
-            <hr className="opacity-40" />
-            <div className="text-slate-300 flex justify-between">
+            <hr className="dark:opacity-40" />
+            <div className="dark:text-slate-300 flex justify-between">
                 <h1 className="font-semibold">Questions?</h1>
                 <a href="https://help.nytimes.com/hc/en-us/articles/360029050872-Word-Games-and-Logic-Puzzles#h_01FVGCB2Z00ZQMDMCYWBPWJNXB" target="_blank" rel="noopener noreferrer" className="underline">
                     FAQ
                 </a>
             </div>
-            <hr className="opacity-40" />
+            <hr className="dark:opacity-40" />
         </div>
     )
     const footercontent = (
-        <div className="text-slate-300 flex justify-between">
+        <div className="dark:text-slate-300 flex justify-between">
                 <h1 className="font-semibold">After this, a new puzzle will be created. Happy Wordling!</h1>
         </div>
     )

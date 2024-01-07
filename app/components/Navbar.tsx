@@ -13,10 +13,10 @@ const Navbar = () => {
     return (
     <>
         <div className="
-                bg-neutral-900
+                dark:bg-neutral-900
                 inset-0 
                 h-16
-                text-white
+                dark:text-white
                 border-b-[1px]
                 border-neutral-500
                 flex
@@ -29,7 +29,7 @@ const Navbar = () => {
             <IoReorderThreeSharp className='cursor-pointer' onClick={sidebar.OnOpen} size={40} />
             </div>
             <div className="">
-                <h1 className=" text-3xl">Wordle</h1>
+                <h1 className="font-extrabold text-3xl">Wordle</h1>
             </div>
             <div className="p-4 flex flex-row gap-2">
                     <HiOutlineQuestionMarkCircle onClick={questionModal.OnOpen} size={32} />

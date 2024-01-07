@@ -10,9 +10,9 @@ const Letter: React.FC<LetterProps> = ({ letterPos, attemptVal }) => {
   const { board, correctWord, currAttempt,setDisabledLetters } = useContext(AppContext);
   const letter = board[attemptVal][letterPos];
 
-  const correctcss = 'bg-thisgreen'; 
-  const almostcss = 'bg-thisyellow'; 
-  const fillcss = 'bg-neutral-800'; 
+  const correctcss = 'bg-thisgreen text-white'; 
+  const almostcss = 'bg-thisyellow text-white'; 
+  const fillcss = 'bg-neutral-800 text-white'; 
 
   const correct = correctWord.toUpperCase()[letterPos] === letter;
   const almost =
@@ -39,7 +39,7 @@ const Letter: React.FC<LetterProps> = ({ letterPos, attemptVal }) => {
         justify-center
         h-14
         w-14
-        text-white
+        dark:text-white
         uppercase
         font-bold
         text-2xl

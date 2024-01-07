@@ -71,7 +71,8 @@ const Modal: React.FC<ModalProps> = ({
               lg:max-w-xl
               h-full
               lg:h-auto
-              bg-neutral-800
+              dark:bg-neutral-800
+              bg-white
               shadow-xl
               rounded-lg
               ">
@@ -97,14 +98,14 @@ const Modal: React.FC<ModalProps> = ({
                       justify-between
                       p-5
                       rounded-t">
-                          <h3 className="text-3xl font-semibold text-slate-300">{ title}</h3>
+                          <h3 className="text-3xl font-semibold dark:text-slate-300">{ title}</h3>
                           <button
                               onClick={handleClose}
                               className="
                           p-1
                           ml-auto
                           border-0
-                        text-white
+                        dark:text-white
                           hover:opacity-70
                           transition">
                               <AiOutlineClose size={20 } />

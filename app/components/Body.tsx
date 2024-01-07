@@ -100,7 +100,7 @@ export default function Home() {
 
     return (
       <div className="
-              bg-neutral-900
+              dark:bg-neutral-900
               h-auto
               flex-grow
               flex

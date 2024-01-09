@@ -59,6 +59,7 @@ const Modal: React.FC<ModalProps> = ({
           focus: oultine-none
           bg-neutral-800
           bg-opacity-70 
+          backdrop-blur-sm 
           ">
               <div
                   onClick={stopPropagation}
